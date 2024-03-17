@@ -3,13 +3,11 @@
 \input{D:/1.UofT/0.LaTeX Preambles/GeneralPreamble.tex}
 \usepackage[nonumberlist]{glossaries}
 
-
 \usepackage{lmodern}
+\let\ch\relax
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-
 \usepackage[russian,main=english]{babel}
-
 
 \newglossary*{tplgy}{Topology}
 
@@ -17,8 +15,16 @@
 \newglossaryentry{tplgy:topology}{
 	type ={tplgy},
 	name ={Topology},
-	description =	 { \foreignlanguage{Russian}{Топология} }	
+	description =	 {\foreignlanguage{Russian}{Топология}}	
 }
+
+
+\newglossaryentry{tplgy:SimplyConnected}{
+	type ={tplgy},
+	name ={Simply Connected},
+	description = {\foreignlanguage{Russian}{Односвязное}}	
+}
+
 
 
 %Complex Analysis
@@ -27,33 +33,102 @@
 \newglossaryentry{complAn:PowerSeries}{
 	type ={complAn},
 	name ={(Formal) Power Series},
-	description = { \foreignlanguage{Russian}{(Формальный) степенной ряд }  }	
+	description = {\foreignlanguage{Russian}{(Формальный) степенной ряд }}	
 }
 
 \newglossaryentry{complAn:analytic}{
 	type ={complAn},
 	name ={Analytic},
-	description = { \foreignlanguage{Russian}{аналитическая} }	
+	description = {\foreignlanguage{Russian}{аналитическая}}	
 }
 
 \newglossaryentry{complAn:multiplicity}{
 	type ={complAn},
 	name ={Order of Multiplicity},
-	description = { \foreignlanguage{Russian}{порядок кратности} }	
+	description = {\foreignlanguage{Russian}{порядок кратности}}	
 }
 
 \newglossaryentry{complAn:SimpleZero}{
 	type ={complAn},
 	name ={Simple zero},
-	description = {простой нуль}	
+	description = {\foreignlanguage{Russian}{простой нуль}}	
 }
 
 \newglossaryentry{complAn:Pole}{
-	type ={},
-	name ={},
-	description = {  }	
+	type ={complAn},
+	name ={Pole},
+	description = {\foreignlanguage{Russian}{полюс}}	
 }
 
+\newglossaryentry{complAn:OrderOfPole}{
+	type ={complAn},
+	name ={Order of multiplicity of pole},
+	description = {\foreignlanguage{Russian}{порядок кратности полюса}}	
+}
+
+\newglossaryentry{complAn:Meromorphic}{
+	type ={complAn},
+	name ={Meromorphic Function},
+	description = {\foreignlanguage{Russian}{мероморфная функция}}	
+}
+
+\newglossaryentry{complAn:Conformal}{
+	type ={complAn},
+	name ={Conformal},
+	description = {\foreignlanguage{Russian}{конформное}}	
+}
+
+\newglossaryentry{complAn:FractionalLinearTransformation}{
+	type ={complAn},
+	name ={Fractional Linear Transformation},
+	description = {\foreignlanguage{Russian}{дробно-линейное преобразование}}	
+}
+
+\newglossaryentry{complAn:MaximalModulusPrinciple}{
+	type ={complAn},
+	name ={Maximal Modulus Principle},
+	description = {\foreignlanguage{Russian}{принцип максимума модуля}}	
+}
+
+\newglossaryentry{complAn:MeanValueProperty}{
+	type ={complAn},
+	name ={Mean Value Property},
+	description = {\foreignlanguage{Russian}{свойство среднего}}	
+}
+\newglossaryentry{complAn:LaurentExpansion}{
+	type ={complAn},
+	name ={Laurent Expansion},
+	description = {\foreignlanguage{Russian}{ряд Лорана}}	
+}
+
+\newglossaryentry{complAn:Annulus}{
+	type ={complAn},
+	name ={Annulus},
+	description = {\foreignlanguage{Russian}{кольцо}}	
+}
+\newglossaryentry{complAn:PrinciplePart}{
+	type ={complAn},
+	name ={Principal Part},
+	description = {\foreignlanguage{Russian}{главная часть}}	
+}
+
+\newglossaryentry{complAn:EssentialSingularity}{
+	type ={complAn},
+	name ={Essential Singularity},
+	description = {\foreignlanguage{Russian}{существенно особая точка}}	
+}
+
+\newglossaryentry{complAn:ResidueTheorem}{
+	type ={complAn},
+	name ={Residue theorem},
+	description = {\foreignlanguage{Russian}{основная теорема о вычетах }}	
+}
+
+\newglossaryentry{complAn:ArgumentPrinciple}{
+	type ={complAn},
+	name ={Argument Principle},
+	description = {\foreignlanguage{Russian}{принцип аргумента}}	
+}
 
 %Quantum Mechanics
 \newglossary*{qm}{Quantum Mechanics}
@@ -72,7 +147,7 @@
 
 \makenoidxglossaries
 %\makeglossaries
-\let\ch\undefined
+
 \begin{document}
 \glsaddall
 \printnoidxglossaries
