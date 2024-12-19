@@ -1,147 +1,57 @@
 %!Tex Root =**RussianEnglishMathPhysicsDictionary.tex
 
-\input{D:/1.UofT/0.LaTeX Preambles/GeneralPreamble.tex}
+%\input{D:/1.UofT/0.LaTeX Preambles/GeneralPreamble.tex}
+
+
+\input{/home/ivan/0.Workspace/1.UofT/0.LaTeX Preambles/GeneralPreamble.tex} %{D:/1.UofT/0.LaTeX Preambles/GeneralPreamble.tex}
+
+
 \usepackage[nonumberlist]{glossaries}
 
 \usepackage{lmodern}
 \let\ch\relax
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+
+\input{/home/ivan/0.Workspace/1.UofT/0.LaTeX Preambles/Font/LiteraturnayaFont.tex}%/D:/1.UofT/0.LaTeX Preambles/Font/LiteraturnayaFont.tex}
 \usepackage[russian,main=english]{babel}
 
-\newglossary*{tplgy}{Topology}
-
-% Topology
-\newglossaryentry{tplgy:topology}{
-	type ={tplgy},
-	name ={Topology},
-	description =	 {\foreignlanguage{Russian}{Топология}}	
-}
 
 
-\newglossaryentry{tplgy:SimplyConnected}{
-	type ={tplgy},
-	name ={Simply Connected},
-	description = {\foreignlanguage{Russian}{Односвязное}}	
-}
 
+
+
+%Linear Algebra
+\input{LinearAlgebraGlossary.tex}
+
+%Algebra
+\input{AbstractAlgebraGlossary.tex}
 
 
 %Complex Analysis
-\newglossary*{complAn}{Complex Analysis}
+\input{ComplexAnalysisGlossary.tex}
 
-\newglossaryentry{complAn:PowerSeries}{
-	type ={complAn},
-	name ={(Formal) Power Series},
-	description = {\foreignlanguage{Russian}{(Формальный) степенной ряд }}	
-}
+%Topology
+\input{TopologyGlossary.tex}
 
-\newglossaryentry{complAn:analytic}{
-	type ={complAn},
-	name ={Analytic},
-	description = {\foreignlanguage{Russian}{аналитическая}}	
-}
+%Differential Topology
+\input{DifferentialTopologyGlossary.tex}
 
-\newglossaryentry{complAn:multiplicity}{
-	type ={complAn},
-	name ={Order of Multiplicity},
-	description = {\foreignlanguage{Russian}{порядок кратности}}	
-}
+%Classical Mechanics 
+\input{ClassicalMechanicsGlossary.tex}
 
-\newglossaryentry{complAn:SimpleZero}{
-	type ={complAn},
-	name ={Simple zero},
-	description = {\foreignlanguage{Russian}{простой нуль}}	
-}
-
-\newglossaryentry{complAn:Pole}{
-	type ={complAn},
-	name ={Pole},
-	description = {\foreignlanguage{Russian}{полюс}}	
-}
-
-\newglossaryentry{complAn:OrderOfPole}{
-	type ={complAn},
-	name ={Order of multiplicity of pole},
-	description = {\foreignlanguage{Russian}{порядок кратности полюса}}	
-}
-
-\newglossaryentry{complAn:Meromorphic}{
-	type ={complAn},
-	name ={Meromorphic Function},
-	description = {\foreignlanguage{Russian}{мероморфная функция}}	
-}
-
-\newglossaryentry{complAn:Conformal}{
-	type ={complAn},
-	name ={Conformal},
-	description = {\foreignlanguage{Russian}{конформное}}	
-}
-
-\newglossaryentry{complAn:FractionalLinearTransformation}{
-	type ={complAn},
-	name ={Fractional Linear Transformation},
-	description = {\foreignlanguage{Russian}{дробно-линейное преобразование}}	
-}
-
-\newglossaryentry{complAn:MaximalModulusPrinciple}{
-	type ={complAn},
-	name ={Maximal Modulus Principle},
-	description = {\foreignlanguage{Russian}{принцип максимума модуля}}	
-}
-
-\newglossaryentry{complAn:MeanValueProperty}{
-	type ={complAn},
-	name ={Mean Value Property},
-	description = {\foreignlanguage{Russian}{свойство среднего}}	
-}
-\newglossaryentry{complAn:LaurentExpansion}{
-	type ={complAn},
-	name ={Laurent Expansion},
-	description = {\foreignlanguage{Russian}{ряд Лорана}}	
-}
-
-\newglossaryentry{complAn:Annulus}{
-	type ={complAn},
-	name ={Annulus},
-	description = {\foreignlanguage{Russian}{кольцо}}	
-}
-\newglossaryentry{complAn:PrinciplePart}{
-	type ={complAn},
-	name ={Principal Part},
-	description = {\foreignlanguage{Russian}{главная часть}}	
-}
-
-\newglossaryentry{complAn:EssentialSingularity}{
-	type ={complAn},
-	name ={Essential Singularity},
-	description = {\foreignlanguage{Russian}{существенно особая точка}}	
-}
-
-\newglossaryentry{complAn:ResidueTheorem}{
-	type ={complAn},
-	name ={Residue theorem},
-	description = {\foreignlanguage{Russian}{основная теорема о вычетах }}	
-}
-
-\newglossaryentry{complAn:ArgumentPrinciple}{
-	type ={complAn},
-	name ={Argument Principle},
-	description = {\foreignlanguage{Russian}{принцип аргумента}}	
-}
+%Field Theory
+\input{ElectrodynamicsGlossary.tex}
 
 %Quantum Mechanics
-\newglossary*{qm}{Quantum Mechanics}
+\input{QuantumMechanicsGlossary.tex}
+
+%QFT
+\input{QuantumFieldTheoryGlossary.tex}
 
 
-%Algebra
-\newglossary*{alg}{Abstract Algebra}
-
-
-%Classical mechanics
-\newglossary*{classMech}{Classical Mechanics}
-
-
+%Gauge Theory
+\input{GaugeTheoryGlossary.tex}
 
 
 
